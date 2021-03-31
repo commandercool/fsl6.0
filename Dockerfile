@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update; \
-apt-get install -y wget python libquadmath0 bc dc less;
+apt-get install -y wget python libquadmath0 bc dc less libgl1-mesa-glx;
 
 RUN wget https://fsl.fmrib.ox.ac.uk/fsldownloads/fslinstaller.py
 RUN chmod a+x fslinstaller.py
